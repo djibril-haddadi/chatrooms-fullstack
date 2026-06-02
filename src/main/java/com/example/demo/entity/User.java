@@ -12,16 +12,16 @@ import java.time.LocalDateTime;
         @Id
         @GeneratedValue(strategy = GenerationType.IDENTITY)
         private Long id;
-        private String Usernname;
-        private String email;
+        private String Username;
+        private String Email;
         private String password;
         private LocalDateTime createdAt;
 
         public User(){}
 
-        public User(String Username,String email,String password, LocalDateTime createdAt){
-            this.email = email;
-            this.Usernname=Username;
+        public User(String Username,String Email,String password, LocalDateTime createdAt){
+            this.Email = Email;
+            this.Username=Username;
             this.id=id;
             this.password=password;
             this.createdAt=createdAt;
@@ -36,12 +36,12 @@ import java.time.LocalDateTime;
             return id;
         }
 
-        public String getUsernname(){
-            return Usernname;
+        public String getUsername(){
+            return Username;
         }
 
         public String getEmail() {
-            return email;
+            return Email;
         }
 
         public String getPassword(){
@@ -52,16 +52,16 @@ import java.time.LocalDateTime;
             return createdAt;
         }
 
-        public void setUsernname(String Username) {
-            this.Usernname = Usernname;
+        public void setUsername(String Username) {
+            this.Username = Username;
         }
 
         public void setPassword(String password){
             this.password=password;
         }
 
-        public void setEmail(String email) {
-            this.email = email;
+        public void setEmail(String Email) {
+            this.Email = Email;
         }
     }
 
