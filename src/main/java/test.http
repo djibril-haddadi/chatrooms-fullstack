@@ -1,0 +1,9 @@
+GET http://localhost:8080/api/users
+Content-Type: application/json
+
+{
+  "Username": "djibril",
+  "email": "djibril@test.com",
+  "password": "test123"
+}
+
