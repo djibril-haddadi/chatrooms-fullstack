@@ -1,9 +1,8 @@
-POST http://localhost:8080/api/users
+POST http://localhost:8080/api/Room
 Content-Type: application/json
 
 {
-  "username": "djbjj",
-  "email": "djrl@test.com",
-  "password": "te3hhhhhh"
+  "titre": "djjj",
+  "description": "djl@test.com"
 }
 
