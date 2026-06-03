@@ -9,12 +9,14 @@ public class UserResponse {
     private LocalDateTime createdAt;
 
 
+
     public UserResponse(Long id, String Username, String Email, LocalDateTime createdAt){
         this.id=id;
         this.Username=Username;
         this.Email=Email;
         this.createdAt = createdAt;
     }
+
 
     public Long getId() {
         return id;

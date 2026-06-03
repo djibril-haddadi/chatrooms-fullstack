@@ -17,6 +17,23 @@ public class UserService {
         }
 
         public UserResponse CreateUser(CreateUserRequest request){
+
+            if(request.getUsername() == null || request.getUsername().isBlank()){
+                throw new IllegalArgumentException("Username is Required");
+            }
+            if(request.getEmail() == null || request.getEmail().isBlank()){
+                throw new IllegalArgumentException("Email is required");
+            }
+            if(!request.getEmail().contains("@")){
+                throw new IllegalArgumentException("Email need an @");
+            }
+            if(request.getPassword()==null || request.getPassword().isBlank()){
+                throw new IllegalArgumentException("Need a password");
+            }
+            if(request.getPassword().length()<6){
+                throw new IllegalArgumentException("Pas assez de caractere pour le mot de passe");
+            }
+
             User user = new User(
                     request.getUsername(),
                     request.getEmail(),
