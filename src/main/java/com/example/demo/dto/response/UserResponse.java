@@ -4,16 +4,16 @@ import java.time.LocalDateTime;
 
 public class UserResponse {
     private Long id;
-    private String Username;
-    private String Email;
+    private String username;
+    private String email;
     private LocalDateTime createdAt;
 
 
 
-    public UserResponse(Long id, String Username, String Email, LocalDateTime createdAt){
+    public UserResponse(Long id, String username, String email, LocalDateTime createdAt){
         this.id=id;
-        this.Username=Username;
-        this.Email=Email;
+        this.username=username;
+        this.email=email;
         this.createdAt = createdAt;
     }
 
@@ -23,11 +23,11 @@ public class UserResponse {
     }
 
     public String getUsername() {
-        return Username;
+        return username;
     }
 
     public String getEmail() {
-        return Email;
+        return email;
     }
 
     public LocalDateTime getCreatedAt() {

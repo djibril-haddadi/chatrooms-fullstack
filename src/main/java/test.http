@@ -1,9 +1,9 @@
-GET http://localhost:8080/api/users
+POST http://localhost:8080/api/users
 Content-Type: application/json
 
 {
-  "Username": "djbjj",
-  "Email": "djibril@test.com",
-  "Password": "te3hhhhhh"
+  "username": "djbjj",
+  "email": "djrl@test.com",
+  "password": "te3hhhhhh"
 }
 

@@ -18,6 +18,9 @@ public class UserService {
 
         public UserResponse CreateUser(CreateUserRequest request){
 
+            if(userRepository.existsByemail(request.getEmail())){
+                throw new IllegalArgumentException("Email already existing");
+            }
             if(request.getUsername() == null || request.getUsername().isBlank()){
                 throw new IllegalArgumentException("Username is Required");
             }

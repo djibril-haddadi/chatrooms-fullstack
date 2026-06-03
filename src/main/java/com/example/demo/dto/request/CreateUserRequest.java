@@ -7,15 +7,15 @@ import java.time.LocalDateTime;
 import java.util.List;
 
 public class CreateUserRequest {
-    private String Username;
-    private String Email;
-    private String Password;
+    private String username;
+    private String email;
+    private String password;
     LocalDateTime createdAt;
 
     public CreateUserRequest(){}
 
     public String getUsername(){
-        return Username;
+        return username;
     }
 
     public LocalDateTime getCreatedAt(){
@@ -23,23 +23,23 @@ public class CreateUserRequest {
     }
 
     public String getEmail(){
-        return Email;
+        return email;
     }
 
     public String getPassword(){
-        return Password;
+        return password;
     }
 
-    public void setUsername(String Username){
-        this.Username=Username;
+    public void setUsername(String username){
+        this.username=username;
     }
 
-    public void setEmail(String Email){
-        this.Email=Email;
+    public void setEmail(String email){
+        this.email=email;
     }
 
-    public void setPassword(String Password){
-        this.Password=Password;
+    public void setPassword(String password){
+        this.password=password;
     }
 
 }
